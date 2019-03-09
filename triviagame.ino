@@ -25,7 +25,6 @@ uint8_t gamestate;  //system state for stage in trivia game
 uint8_t num_count; //variable for storing the number of times the button has been pressed before timeout for user answer
 uint8_t num_countdone; // 1 = done, 0 = counting user ans
 unsigned long timer;  //used for storing millis() readings.
-uint8_t totscore; //use for keeping score
 
 #define IDLE 0  //example definition
 #define DOWN 1  //example definition
@@ -168,7 +167,6 @@ void button2(uint8_t input){
       tft.println("to keep playing!");
       }
 
-
 unsigned long startscreen() {
   tft.setCursor(0, 0);
   tft.fillScreen(TFT_BLACK); //fill background
@@ -191,5 +189,4 @@ unsigned long startscreen() {
   tft.setTextSize(1); //default font size
   tft.println("to start playing press");
   tft.println(" button 2 once");
- 
   }
