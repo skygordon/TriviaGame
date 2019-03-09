@@ -1,5 +1,6 @@
 # TriviaGame
 Utilizes IoT and sqlite3 to create a Trivia Game with lasting memory
+Code in Python and C++
 
 Parts: Esp32, tft Screen 1.8", 2 buttons
 
